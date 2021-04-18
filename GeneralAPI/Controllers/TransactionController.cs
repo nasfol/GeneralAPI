@@ -145,10 +145,11 @@ namespace GeneralAPI.Controllers
 
                 return Ok("Transaction succesfully deleted");
             }
-            
-           
+            else
+            {
                 return BadRequest("Transaction  cannot be deleted");
-           
+            }
+                
         }
     }
 
